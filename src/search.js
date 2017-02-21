@@ -1,18 +1,18 @@
 
 /*
-<form target="_blank" accept-charset="utf-8" method="get" action="//www.google.com/search">
+<form target="_blank" accept-charset="utf-8" method="get" action="//startpage.com/do/search">
 	關鍵字：
 	<input type="search" name="q" placeholder="Search Ubuntu TW" />
-	<input type="hidden" name="sitesearch" value="www.ubuntu-tw.org" />
+	<input type="hidden" name="host" value="www.ubuntu-tw.org" />
 	<input type="submit" value="搜尋" />
 </form>
 */
 
 var embed = document.createElement('div'); // https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
 
-//<form target="_blank" accept-charset="utf-8" method="get" action="//www.google.com/search">
+//<form target="_blank" accept-charset="utf-8" method="get" action="//startpage.com/do/search">
 var form = document.createElement('form');
-form.action = '//www.google.com/search';
+form.action = '//startpage.com/do/search';
 form.target = '_blank';
 form.method = 'get';
 form.acceptCharset = 'utf-8';
@@ -32,10 +32,10 @@ keyword.placeholder = 'Search Ubuntu TW';
 form.appendChild(keyword);
 
 
-//<input type="hidden" name="sitesearch" value="www.ubuntu-tw.org" />
+//<input type="hidden" name="host" value="www.ubuntu-tw.org" />
 var site = document.createElement('input');
 site.type = 'hidden';
-site.name = 'sitesearch';
+site.name = 'host';
 site.value = 'www.ubuntu-tw.org';
 form.appendChild(site);
 
