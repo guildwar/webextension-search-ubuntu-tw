@@ -2,6 +2,9 @@
 
 WebExtension Search [www.ubuntu-tw.org](//www.ubuntu-tw.org)
 
+This is fork from
+https://github.com/samwhelp/webextension-search-ubuntu-tw.git
+Change search engine from google.com to startpage.com
 
 ## install git
 
@@ -12,7 +15,7 @@ $ sudo apt-get install git
 ## clone
 
 ``` sh
-$ git clone https://github.com/samwhelp/webextension-search-ubuntu-tw.git
+$ git clone https://github.com/guildwar/webextension-search-ubuntu-tw.git
 ```
 
 ## install for firefox
